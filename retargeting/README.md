@@ -1,8 +1,5 @@
 # Motion Retargeting to Humanoids (Unitree G1, Booster T1)
 
-Motion retargeting converts human motion (MoCap, SMPL/AMASS, or video-based pose)
-into robot joint targets that respect the humanoid’s kinematics, limits, and contacts.
-
 This page focuses on **retargeting** (human → humanoid).  
 For **stair-climbing RL** and **whole-body policies**, see `locomotion/` and `stairs/`.
 
@@ -23,7 +20,7 @@ A practical retargeting pipeline often looks like:
 
 ---
 
-## Core Retargeting Methods (G1 / T1-relevant)
+## Core Retargeting Methods (G1 / T1)
 
 ### GMR / “Retargeting Matters” (2025) — strong general baseline
 - General Motion Retargeting (GMR): key-body mapping → rest-pose alignment → non-uniform scaling → staged IK solve
@@ -50,18 +47,6 @@ A practical retargeting pipeline often looks like:
 
 ---
 
-### TWIST / TWIST2 (2025) — teleop-driven real-time retargeting
-- Frames teleoperation as: **real-time retargeting → whole-body tracking policy**
-- TWIST2 describes a detailed G1 retargeting tweak:
-  - lower body uses position+rotation constraints
-  - upper body uses rotation-only (more robust to noisy global pose)
-
-**Links**
-- TWIST: https://arxiv.org/abs/2505.02833
-- TWIST2: https://arxiv.org/abs/2511.02832
-
----
-
 ### SPIDER (2025) — physics-informed retargeting at scale (dexterous + whole-body)
 - Trajectory-optimization style retargeting that enforces **dynamic feasibility** and contact consistency
 - Evaluated on humanoid whole-body control with **Unitree G1** and **Booster T1**
@@ -83,14 +68,6 @@ Repo: https://github.com/hongsukchoi/VideoMimic
 
 ---
 
-### World-Coordinate Retargeting via SAM 3D Body (Dec 2025) — stable world trajectories → G1
-- A lightweight vision pipeline that produces world-coordinate motion from monocular video
-- Then retargets to **Unitree G1** using a kinematics-aware staged IK pipeline
-
-Paper: https://arxiv.org/abs/2512.21573
-
----
-
 ## Learning-based Retargeting (emerging)
 
 ### MoReFlow (2025) — unsupervised flow matching for retargeting
@@ -101,25 +78,15 @@ Paper: https://arxiv.org/abs/2509.25600
 
 ---
 
-## Practical Notes for Unitree G1 / Booster T1
-
-### Common pain points
-- **Morphology mismatch** (limb proportions, hip offsets)
-- **Foot contact quality** (anti-slip / anti-skate matters a lot)
-- **Upper-body coupling** (arm motion affects balance)
-- **Hand mismatch** (Dex3 often behaves closer to a gripper in teleop pipelines)
-
-### What to record in your repo for each method
+### What to record for each method
 For each paper/tool, capture:
 - Input format (BVH / SMPL / video pose)
-- Robot(s) supported (G1, T1, H1…)
+- Robot(s) supported (G1, T1)
 - Contact handling (foot skate, collisions, ground constraints)
 - Output (joint angles, root trajectory, task-space targets)
 - Whether it’s real-time or offline
 
 ---
 
-## Open Problems (good research directions)
-- Retargeting **stairs + manipulation** simultaneously (hands + feet contacts at once)
+## Open Problems
 - Vision-conditioned retargeting (scene-aware foot placement & grasp points)
-- Retargeting that preserves **force/torque feasibility**, not just kinematics
