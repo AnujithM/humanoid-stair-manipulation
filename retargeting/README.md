@@ -43,14 +43,6 @@ For **stair-climbing RL** and **whole-body policies**, see `locomotion/` and `st
 
 ---
 
-### VideoMimic (CoRL 2025)
-- Real-to-sim pipeline reconstructs 3D human motion from single-camera video and **retargets to humanoids**
-- Often used to produce reference motions for imitation/control training
-
-Repo: https://github.com/hongsukchoi/VideoMimic
-
----
-
 ## Learning-based Retargeting (emerging)
 
 ### MoReFlow (2025) — unsupervised flow matching for retargeting
@@ -73,5 +65,6 @@ For each paper/tool, capture:
 
 ## Open Problems
 - Vision-conditioned retargeting (scene-aware foot placement & grasp points)
+
 
 
