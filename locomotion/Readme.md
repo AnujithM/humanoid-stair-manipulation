@@ -26,9 +26,6 @@ with or without support, under varying terrain and perception uncertainty.
 ## Key Papers
 
 ### Learning-based Stair Climbing
-- **"Learning Agile and Dynamic Motor Skills for Legged Robots"**  
-  *Hwangbo et al., Science 2019*  
-  → RL-based locomotion, sim-to-real
 
 - **"AMP: Adversarial Motion Priors"**  
   *Peng et al., SIGGRAPH 2021*  
@@ -48,3 +45,4 @@ with or without support, under varying terrain and perception uncertainty.
 - Vision-based foothold selection
 - Carrying objects while climbing
 - Robustness under perception noise
+
