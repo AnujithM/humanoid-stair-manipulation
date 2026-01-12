@@ -1,8 +1,7 @@
 # Humanoid Stair Climbing
 
 This section covers methods that enable humanoid robots to ascend and descend
-stairs under **realistic constraints**, including perception uncertainty,
-contact-rich interaction, and simultaneous manipulation (e.g., using rails or
+stairs under **realistic constraints** like contact-rich interaction, and simultaneous manipulation (e.g., using rails or
 carrying objects).
 
 The focus is on **whole-body humanoid systems** where stair climbing is not an
@@ -96,6 +95,6 @@ and real-world deployment on Unitree G1.
   - carrying objects
   - using handrails
 - Retargeting across different humanoid morphologies (e.g., G1 vs Booster T1)
-- Unified policies for flat ground, stairs, slopes, and obstacles
 
 ---
+
