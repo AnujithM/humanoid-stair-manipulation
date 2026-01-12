@@ -43,9 +43,7 @@ For **stair-climbing RL** and **whole-body policies**, see `locomotion/` and `st
 
 ---
 
-## Vision-to-Retargeting (video → humanoid motion)
-
-### VideoMimic (CoRL 2025) — monocular video → world motion → retarget
+### VideoMimic (CoRL 2025)
 - Real-to-sim pipeline reconstructs 3D human motion from single-camera video and **retargets to humanoids**
 - Often used to produce reference motions for imitation/control training
 
@@ -75,4 +73,5 @@ For each paper/tool, capture:
 
 ## Open Problems
 - Vision-conditioned retargeting (scene-aware foot placement & grasp points)
+
 
