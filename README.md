@@ -29,8 +29,8 @@ The focus is on **mid-scale humanoids** such as **Unitree G1** and **Booster T1*
 | Area | Description |
 |-----|------------|
 | `locomotion/` | Walking, stair climbing, push recovery |
-| `manipulation/` | Grasping, bimanual manipulation |
-| `retargeting/` | SMPL, AMASS, OmniRetarget-style methods |
+| `manipulation/` | Grasping, carrying weight |
+| `retargeting/` | SMPL, AMASS, PHUMA, LAFAN1, Humanoid-X |
 | `perception/` | Vision, depth, affordances |
 | `robots/` | Robot-specific notes (G1, Booster T1) |
 | `benchmarks/` | Simulators, datasets, metrics |
@@ -41,7 +41,6 @@ The focus is on **mid-scale humanoids** such as **Unitree G1** and **Booster T1*
 
 - **Unitree G1**
 - **Booster T1**
-- Comparable humanoids (Digit, Atlas, H1)
 
 ---
 
