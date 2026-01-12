@@ -13,7 +13,7 @@ The focus is on **mid-scale humanoids** such as **Unitree G1** and **Booster T1*
 
 ---
 
-## 🔍 Key Themes
+##  Key Themes
 
 -  Stair climbing with and without support rails  
 -  Bimanual and tool-based manipulation during locomotion  
