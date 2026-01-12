@@ -9,7 +9,7 @@ This repository is a curated archive of **research papers, methods, and resource
 - **Physics-informed** and hybrid control
 - **Vision-based affordances** for grasping and terrain understanding
 
-The focus is on **mid-scale humanoids** such as **Unitree G1** and **Booster T1**, with an emphasis on **simulation-to-real transfer**.
+The focus is on **mid-scale humanoids** such as **Unitree G1** and **Booster T1**.
 
 ---
 
