@@ -5,21 +5,6 @@ For **stair-climbing RL** and **whole-body policies**, see `locomotion/` and `st
 
 ---
 
-## What “Retargeting” Usually Means
-
-A practical retargeting pipeline often looks like:
-
-1. **Human motion source**
-   - MoCap skeleton (BVH), SMPL/AMASS, or video-based 3D pose
-2. **Kinematic retargeting (IK / optimization)**
-   - Map key bodies (torso, feet, hands), align rest poses, scale
-3. **Contact + feasibility cleanup**
-   - Reduce foot skating, avoid self-collisions, fix ground penetration
-4. **Use the retargeted motion**
-   - As tracking references for control, or as training data for RL/IL
-
----
-
 ## Core Retargeting Methods (G1 / T1)
 
 ### GMR / “Retargeting Matters” (2025) — strong general baseline
@@ -90,3 +75,4 @@ For each paper/tool, capture:
 
 ## Open Problems
 - Vision-conditioned retargeting (scene-aware foot placement & grasp points)
+
